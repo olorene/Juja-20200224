@@ -1,5 +1,13 @@
 package ua.com.juja.secondModuleRestart;
 
+/**
+ * Разменять N-ку монетками a0, a1, a2, ... , aM =
+ *      количество комбинаций как разменять N-ку монетками a0 ... a(M-1)
+ *          при условии, что M > 0
+ *      +
+ *      колличество комбинаций, как разменять (N-ку - текущий номинал aM)
+ *          при условии, что разница больше = 0
+ */
 public class ExchangeMoneyRecursion {
     public static int exchangeAmountOfCoinsBrutForce(int amountForExchange) {
         int[] coins = {1, 2, 5, 10, 25, 50};
