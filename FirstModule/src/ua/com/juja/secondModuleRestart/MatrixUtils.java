@@ -47,17 +47,8 @@ public class MatrixUtils {
         } catch (IllegalArgumentException ex) {
             System.out.println("Something happen");
         }
-        printMatrix(matrixReuslt);
+        printMatrix.printMatrix(matrixReuslt);
 
-    }
-
-    private static void printMatrix(int[][] matrixReuslt) {
-        for (int i = 0; i < matrixReuslt.length; i++) {
-            for (int j = 0; j < matrixReuslt[0].length; j++) {
-                System.out.print(matrixReuslt[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 
     public static int[][] mul(int[][] fst, int[][] snd) {
