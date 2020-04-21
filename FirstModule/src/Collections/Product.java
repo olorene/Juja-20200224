@@ -1,8 +1,8 @@
 package Collections;
 
 class Product {
-    private String name;
-    private Integer weight;
+    private final String name;
+    private final Integer weight;
 
     public Product(String name, Integer weight) {
         this.name = name;
@@ -11,10 +11,6 @@ class Product {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Integer getWeight() {
@@ -29,11 +25,4 @@ class Product {
                 '}';
     }
 
-    public void setWeight(Integer weight) {
-        if (weight < 0) {
-            System.out.println("Weight less then 0");
-        } else {
-            this.weight = weight;
-        }
-    }
 }
